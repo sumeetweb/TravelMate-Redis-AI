@@ -1,0 +1,41 @@
+{
+  "name": "travelmate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "frontend": "cd frontend && npm run dev",
+    "dev:full": "concurrently \"npm run dev\" \"npm run frontend\"",
+    "build": "cd frontend && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumeetweb/Travelmate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumeetweb/Travelmate/issues"
+  },
+  "homepage": "https://github.com/sumeetweb/Travelmate#readme",
+  "description": "",
+  "dependencies": {
+    "@redis/json": "^5.7.0",
+    "@redis/search": "^5.7.0",
+    "@redis/time-series": "^5.7.0",
+    "concurrently": "^9.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "openai": "^5.11.0",
+    "redis": "^5.7.0",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
